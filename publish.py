@@ -41,7 +41,7 @@ with open("pyproject.toml", "r") as f:
 pypiWarning = dedent(
     f"""\
     *Note: This document is best viewed [on github]({githubUrl}).
-    Pypi's headers are all caps which presents inaccurate information*"
+    Pypi's headers are all caps which presents inaccurate information*
     """
 )
 pypiWarnComment = "<!-- pypiwarn -->"
