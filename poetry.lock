@@ -12,6 +12,14 @@ tedent = ">=0.1.1,<0.2.0"
 wrapt = ">=1.10,<2.0"
 
 [[package]]
+category = "dev"
+description = "A simple function to test whether your git repo is clean"
+name = "is-git-repo-clean"
+optional = false
+python-versions = ">=3.7,<4.0"
+version = "0.3.4"
+
+[[package]]
 category = "main"
 description = "A MutableSet that remembers its order, so that every entry has an index."
 name = "ordered-set"
@@ -40,6 +48,14 @@ ordered_set = ">=3.1,<4.0"
 wrapt = ">=1.11,<2.0"
 
 [[package]]
+category = "dev"
+description = "Python Library for Tom's Obvious, Minimal Language"
+name = "toml"
+optional = false
+python-versions = "*"
+version = "0.10.0"
+
+[[package]]
 category = "main"
 description = "Module for decorators, wrappers and monkey patching."
 name = "wrapt"
@@ -48,12 +64,14 @@ python-versions = "*"
 version = "1.11.1"
 
 [metadata]
-content-hash = "bf5afca39495fc5604a6fafb5a945180952860a0b5ef8936108157d48b7f61dc"
+content-hash = "37fb3ee16d468caef56f5b621ed40ed9b8e446810c8d7680e20dcc21dce52975"
 python-versions = "^3.7"
 
 [metadata.hashes]
 all-purpose-set = ["19a06fd4f74ace61ccf6a6b8727a02fc508f577bbe971db0f25b376bd465d478", "29b13dec5aa8f7e823fc8cb069ab25f92f28da064b8b05b8f5cc5679ee13f145"]
+is-git-repo-clean = ["608c8585be23478af5c6c68e53f4a8ddd1320d3dd478ebc894c07ab6b702dc00", "c33ec4893389943c6f2b7351ff65904726640861b444ec37b3afb8870a9917fa"]
 ordered-set = ["41c7ba85e7619cd4c71e38d4cd434f84de8473b826919eb79274b3a11b940b4d", "f9b703ea9aa9c1db44412c5ba1c16cf8b7ad7ef37a685e4da2fd3754b40f8f6a"]
 simple-chalk = ["d80f55993dfa040c1b55d2fbfb925e4fbb5798c2934601aa448ef4a192d84196"]
 tedent = ["a2565f469f9044c9f6117962bea67da6ee3b71e112d055128414ba86c15ca1ae", "b83bb8eba0a8c53b1597e3c18a0cefdaeeb83cf64d3f6ca5e5973195778a9eec"]
+toml = ["229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c", "235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e", "f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"]
 wrapt = ["4aea003270831cceb8a90ff27c4031da6ead7ec1886023b80ce0dfe0adf61533"]
