@@ -74,84 +74,84 @@ print(list(ll))
 
 <br>
 
-##### Attributes
+#### Attributes
 
-###### firstNode: [node](#node)
+##### firstNode: [node](#node)
 ```py
 print(ll.firstNode.element) # a
 ```
-###### lastNode: [node](#node)
+##### lastNode: [node](#node)
 ```py
 print(ll.lastNode.element) # c
 ```
 
 <br>
 
-##### Methods
+#### Methods
 
-###### append(element)
+##### append(element)
 ```py
 ll.append('d')
 print(list(ll)) # ['a', 'c', 'd']
 ```
 
-###### copy() => LinkedList
+##### copy() => LinkedList
 
-###### appendAll(list)
+##### appendAll(list)
 ```py
 ll.appendAll(['d', 'e'])
 print(list(ll)) # ['a', 'c', 'd', 'e']
 ```
 
-###### findFirstNode(element) => [node](#node)
+##### findFirstNode(element) => [node](#node)
 ```py
 cNode = ll.findFirstNode(['c'])
 print(cNode.element) # c
 ```
 
-###### insertAfter([node](#node), element)
+##### insertAfter([node](#node), element)
 ```py
 ll.insertAfter(ll.firstNode, 'b')
 print(list(ll)) # ['a', 'b', 'c']
 ```
 
-###### insertAllAfter([node](#node), list)
+##### insertAllAfter([node](#node), list)
 ```py
 ll.insertAllAfter(ll.firstNode, ['b', 'd'])
 print(list(ll)) # ['a', 'b', 'd', 'c']
 ```
 
-###### insertAllBefore([node](#node), list)
+##### insertAllBefore([node](#node), list)
 ```py
 ll.insertAllBefore(ll.lastNode, ['b', 'd'])
 print(list(ll)) # ['a', 'b', 'd', 'c']
 ```
 
-###### insertBefore([node](#node), element)
+##### insertBefore([node](#node), element)
 ```py
 ll.insertBefore(ll.lastNode, 'b')
 print(list(ll)) # ['a', 'b', 'c']
 ```
 
-###### prepend(element)
+##### prepend(element)
 ```py
 ll.prepend('z')
 print(list(ll)) # ['z', 'a', 'c']
 ```
 
-###### prependAll(list)
+##### prependAll(list)
 ```py
 ll.prependAll(['y', 'z'])
 print(list(ll)) # ['y', 'z', 'a', 'c']
 ```
 
-###### removeFirstElement(element)
+##### removeFirstElement(element)
 ```py
 ll.removeFirstElement('c')
 print(list(ll)) # ['a']
 ```
 
-###### removeNode([node](#node))
+##### removeNode([node](#node))
 ```py
 ll.removeNode(ll.firstNode)
 print(list(ll)) # ['c']
