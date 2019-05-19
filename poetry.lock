@@ -1,15 +1,40 @@
 [[package]]
-category = "main"
-description = "A set that works with both hashable and non-hashable elements"
-name = "all-purpose-set"
+category = "dev"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+name = "appdirs"
 optional = false
-python-versions = ">=3.7,<4.0"
-version = "0.1.3"
+python-versions = "*"
+version = "1.4.3"
+
+[[package]]
+category = "dev"
+description = "Classes Without Boilerplate"
+name = "attrs"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "19.1.0"
+
+[[package]]
+category = "dev"
+description = "The uncompromising code formatter."
+name = "black"
+optional = false
+python-versions = ">=3.6"
+version = "18.9b0"
 
 [package.dependencies]
-ordered_set = ">=3.1,<4.0"
-tedent = ">=0.1.1,<0.2.0"
-wrapt = ">=1.10,<2.0"
+appdirs = "*"
+attrs = ">=17.4.0"
+click = ">=6.5"
+toml = ">=0.9.4"
+
+[[package]]
+category = "dev"
+description = "Composable command line interface toolkit"
+name = "click"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "7.0"
 
 [[package]]
 category = "dev"
@@ -20,32 +45,12 @@ python-versions = ">=3.7,<4.0"
 version = "0.3.4"
 
 [[package]]
-category = "main"
-description = "A MutableSet that remembers its order, so that every entry has an index."
-name = "ordered-set"
-optional = false
-python-versions = ">=2.7"
-version = "3.1"
-
-[[package]]
 category = "dev"
 description = "A terminal string styling library"
 name = "simple-chalk"
 optional = false
 python-versions = ">=3.6"
 version = "0.1.0"
-
-[[package]]
-category = "main"
-description = "like dedent but more flexible"
-name = "tedent"
-optional = false
-python-versions = ">=3.7,<4.0"
-version = "0.1.1"
-
-[package.dependencies]
-ordered_set = ">=3.1,<4.0"
-wrapt = ">=1.11,<2.0"
 
 [[package]]
 category = "dev"
@@ -55,23 +60,15 @@ optional = false
 python-versions = "*"
 version = "0.10.0"
 
-[[package]]
-category = "main"
-description = "Module for decorators, wrappers and monkey patching."
-name = "wrapt"
-optional = false
-python-versions = "*"
-version = "1.11.1"
-
 [metadata]
-content-hash = "37fb3ee16d468caef56f5b621ed40ed9b8e446810c8d7680e20dcc21dce52975"
+content-hash = "104d531e863ed57e8d0906e9c51b91e7582e38dd099133377e4a39def3c6cfb3"
 python-versions = "^3.7"
 
 [metadata.hashes]
-all-purpose-set = ["19a06fd4f74ace61ccf6a6b8727a02fc508f577bbe971db0f25b376bd465d478", "29b13dec5aa8f7e823fc8cb069ab25f92f28da064b8b05b8f5cc5679ee13f145"]
+appdirs = ["9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92", "d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"]
+attrs = ["69c0dbf2ed392de1cb5ec704444b08a5ef81680a61cb899dc08127123af36a79", "f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399"]
+black = ["817243426042db1d36617910df579a54f1afd659adb96fc5032fcf4b36209739", "e030a9a28f542debc08acceb273f228ac422798e5215ba2a791a6ddeaaca22a5"]
+click = ["2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13", "5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"]
 is-git-repo-clean = ["608c8585be23478af5c6c68e53f4a8ddd1320d3dd478ebc894c07ab6b702dc00", "c33ec4893389943c6f2b7351ff65904726640861b444ec37b3afb8870a9917fa"]
-ordered-set = ["41c7ba85e7619cd4c71e38d4cd434f84de8473b826919eb79274b3a11b940b4d", "f9b703ea9aa9c1db44412c5ba1c16cf8b7ad7ef37a685e4da2fd3754b40f8f6a"]
 simple-chalk = ["d80f55993dfa040c1b55d2fbfb925e4fbb5798c2934601aa448ef4a192d84196"]
-tedent = ["a2565f469f9044c9f6117962bea67da6ee3b71e112d055128414ba86c15ca1ae", "b83bb8eba0a8c53b1597e3c18a0cefdaeeb83cf64d3f6ca5e5973195778a9eec"]
 toml = ["229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c", "235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e", "f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"]
-wrapt = ["4aea003270831cceb8a90ff27c4031da6ead7ec1886023b80ce0dfe0adf61533"]

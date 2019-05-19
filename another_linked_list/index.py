@@ -2,7 +2,7 @@
 # Imports #
 # ------- #
 
-from all_purpose_set import ApSet
+from ._vendor.all_purpose_set import ApSet
 from types import SimpleNamespace as o
 from .fns import isEmpty, isLaden, raise_
 
